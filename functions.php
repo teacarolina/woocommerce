@@ -26,6 +26,11 @@ function load_js() {
 
   add_action('wp_enqueue_scripts', 'load_js');
 
+  function add_themes_features() {
+      add_theme_support('woocommerce');
+  }
+  add_action('after_setup_theme', 'add_themes_features');
+
 
 
 

@@ -7,7 +7,7 @@
     <title>Document</title>
     <?php wp_head() ?>
 </head>
-<body>
+<body class = "woocommerce">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 <div class="super_container">
