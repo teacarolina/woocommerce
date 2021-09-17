@@ -28,11 +28,9 @@ function load_js() {
 
   function add_themes_features() {
       add_theme_support('woocommerce');
+      add_theme_support('post-thumbnails');
   }
   add_action('after_setup_theme', 'add_themes_features');
-
-
-
 
 
 
