@@ -49,7 +49,9 @@
                     <!-- Logo -->
                     <div class="col-lg-2 col-sm-3 col-3 order-1">
                         <div class="logo_container">
-                            <div class="logo"><a href="#">Logga</a></div>
+                            <div class="logo"><!-- <a href="#">Logga</a> -->
+                            <img class="logo-image" src="<?php echo get_template_directory_uri(); ?>/img/image2vector.svg">
+</div>
                         </div>
                     </div> <!-- Search -->
                     <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
