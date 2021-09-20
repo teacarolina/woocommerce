@@ -9,6 +9,15 @@
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px
 }
 
+#head-pic{
+    max-height: 25rem;
+    min-height: 16rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover; 
+    z-index: -2;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
@@ -27,7 +36,7 @@ div {
 
 ul {
     list-style: none;
-    margin-bottom: 0px
+    margin-bottom: 0px;
 }
 
 p {
@@ -386,12 +395,14 @@ section {
 .standard_dropdown li:hover>ul {
     top: 100%;
     visibility: visible;
-    opacity: 1
+    opacity: 1;
+    z-index: 1
 }
 
 .standard_dropdown ul ul {
     left: 100%;
-    top: 0 !important
+    top: 0 !important;
+    z-index: 1
 }
 
 .top_bar_user {

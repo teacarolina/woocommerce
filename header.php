@@ -195,5 +195,5 @@
             </div>
         </div>
     </header>
-    <div style="height: 700px"> </div>
+  
 </div>
