@@ -15,8 +15,9 @@
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover; 
-    z-index: -2;
 }
+
+
 
 #category-pics{
     margin-top: 40px;
@@ -211,7 +212,7 @@ section {
 
 .super_container {
     width: 100%;
-    overflow: hidden
+    /*overflow: hidden*/
 }
 
 .prlx_parent {
@@ -267,7 +268,7 @@ section {
 }
 
 .header.scrolled .top_bar {
-    display: none
+    display: none;
 }
 
 .top_bar_contact {
@@ -590,7 +591,7 @@ section {
     width: calc((100% - 50px) * 0.399);
     height: 50px;
     float: left;
-    padding-left: 26px
+    padding-left: 26px;
 }
 
 .custom_dropdown::before {
@@ -618,7 +619,7 @@ section {
     -moz-transform: translateY(-1px);
     -ms-transform: translateY(-1px);
     -o-transform: translateY(-1px);
-    transform: translateY(-1px)
+    transform: translateY(-1px);
 }
 
 .custom_dropdown_placeholder {
@@ -645,7 +646,7 @@ section {
     -moz-transition: opacity 0.2s ease;
     -ms-transition: opacity 0.2s ease;
     -o-transition: opacity 0.2s ease;
-    transition: all 0.2s ease
+    transition: all 0.2s ease;
 }
 
 .custom_list.active {
@@ -1091,7 +1092,7 @@ select option {
     margin: 0;
     width: 100%;
     height: 0px;
-    overflow: hidden;
+   overflow: hidden;
     z-index: 1
 }
 
