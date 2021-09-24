@@ -34,7 +34,10 @@ function load_js() {
   add_action('after_setup_theme', 'add_themes_features');
 
 
-
+  /* function custom_menu() {
+    register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
+  }
+  add_action( 'init', 'custom_menu' ); */
 
 
 
