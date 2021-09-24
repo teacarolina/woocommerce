@@ -368,7 +368,7 @@ section {
 }
 
 .standard_dropdown li a:hover {
-    color: #0e8ce4
+    color: #c9bda1;
 }
 
 .standard_dropdown li a i {
@@ -469,7 +469,7 @@ section {
 }
 
 .top_bar_user a:hover {
-    color: #8a8a8a
+    color: #8a8a8a;
 }
 
 .header_main {
@@ -511,7 +511,7 @@ section {
 .logo a {
     font-size: 36px;
     font-weight: 500;
-    color: #0e8ce4;
+    color: #c9bda1;
 }
 
 .header_search {
@@ -1056,7 +1056,7 @@ select option {
     position: relative;
     border-bottom: solid 1px rgba(255, 255, 255, 0.1);
 
-    vertical-align: middle;
+    /* vertical-align: middle; */
 
 }
 
