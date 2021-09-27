@@ -39,6 +39,4 @@ function load_js() {
   }
   add_action( 'init', 'custom_menu' ); */
 
-
-
 ?>
