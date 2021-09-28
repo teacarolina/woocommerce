@@ -202,5 +202,5 @@ wp_nav_menu( array(
             </div>
         </div>
     </header>
-    <div style="height: 10px"> </div>
+    <div style="height: 10px"> </div>	
 </div>
