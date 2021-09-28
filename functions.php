@@ -33,7 +33,10 @@ function load_js() {
   }
   add_action('after_setup_theme', 'add_themes_features');
 
-
+  function wpb_custom_new_menu() {
+    register_nav_menu('header',__( 'My Custom Header Menu' ));
+  }
+  add_action( 'init', 'wpb_custom_new_menu' );
 
 
 

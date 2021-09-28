@@ -109,7 +109,15 @@
                             <!-- Main Nav Menu -->
                             <div class="main_nav_menu">
                                 <ul class="standard_dropdown main_nav_dropdown">
-                                    <li><a href="#">Hem<i class="fas fa-chevron-down"></i></a></li>
+                            
+				<!-- //hämtar menu
+wp_nav_menu( array( 
+    'theme_location' => 'header', 
+    'container_class' => 'custom-menu-class' ) );  -->
+
+                                    <li>
+                                    
+                                    <a href="#">Hem<i class="fas fa-chevron-down"></i></a></li>
                                     <li class="hassubs"> <a href="#">Kategorier<i class="fas fa-chevron-down"></i></a>
                                         <ul>
                                             <li> <a href="#">Bestick<i class="fas fa-chevron-down"></i></a>
@@ -157,7 +165,6 @@
                             <div class="page_menu_search">
                                 <form action="#"> <input type="search" required="required" class="page_menu_search_input" placeholder="Search for products..."> </form>
                             </div>
-        
                                 <li class="page_menu_item"> <a href="#">Hem<i class="fa fa-angle-down"></i></a> </li>
                 
                                 <li class="page_menu_item has-children"> <a href="#">Kategorier<i class="fa fa-angle-down"></i></a>
