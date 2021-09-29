@@ -34,9 +34,66 @@ function load_js() {
   add_action('after_setup_theme', 'add_themes_features');
 
 
-  /* function custom_menu() {
+  /* ska eventuellt testa detta sen för footer
+  function custom_menu() {
     register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
   }
   add_action( 'init', 'custom_menu' ); */
 
+  add_action('wp_head','quadlayers_checkout_style');
+
+//css på checkout sidan
+function quadlayers_checkout_style(){
+         if(is_checkout()==true){
+
+                 echo '<style> .col2-set{padding:20px!important;} 
+                 .woocommerce-billing-fields__field-wrapper{width:300px!important;}
+                 .input-text{color:black!important;}
+                 #order_review_heading{padding:20px!important;}
+                 .woocommerce-checkout-review-order{padding:20px!important;}<style>';
+         }
+}
+
+add_action('wp_head','quadlayers_cart_style');
+
+//css på cart sidan 
+function quadlayers_cart_style(){
+  if(is_cart()==true){
+
+          echo '<style> .woocommerce-cart-form{padding:20px!important;}
+          .product-thumbnail{width:15%!important; height:15%!important;}
+          .input-text{color:black!important;}
+          #coupon_code{width:150px!important; height:45px!important;}<style>';
+  }
+}
+
+add_action('wp_head','quadlayers_category_style');
+
+//css på category sidorna 
+function quadlayers_category_style(){
+  if(is_archive()==true){
+
+          echo '<style> .content-area{padding:20px!important;}
+          .size-woocommerce_thumbnail{width:220px!important; height:220px!important;}
+          .onsale{background-color:red!important;}<style>';
+  }
+}
+
+//tar bort "Additional notes" på checkout page
+add_filter( 'woocommerce_enable_order_notes_field', '__return_false', 9999 );
+
+//tar bort sidebar på produktsidor
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+
+/* 
+ska eventuellt testa detta sen för footer
+function addWidgets() {
+  register_sidebar(
+    array(
+      'name' => 'categories',
+      'id' => 'categories'
+    )
+    );
+  }
+  add_action('widgets_init', 'addWidgets'); */
 ?>

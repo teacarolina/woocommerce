@@ -1,4 +1,4 @@
-<div class="container-fluid justify-content-center px-0 ">
+<!-- <div class="container-fluid justify-content-center px-0 ">
     <div class="card-footer py-5 border-0 px-0 mx-0">
         <div class="card-body text-center">
             <div class="row justify-content-center">
@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <footer>
         <div class="row justify-content-around mb-0 pt-5 mx-4">
             <div class="col-xl-2 col-md-4 order-xl-1 order-4 mr-xl-0 my-auto">
@@ -30,7 +30,8 @@
                     <li class="mt-md-0 mt-4 li-footer">Kategorier</li>
                     <li class="li-footer">Bestick </li>
                     <li class="li-footer">Tallrikar</li>
-                    <li class="li-footer">Glas</li>
+                    <li class="li-footer">Glas</li> 
+                    <?php //dynamic_sidebar('categories');?>
                 </ul>
             </div>
             <div class="col-xl-2 col-md-3 pt-4 order-2">
@@ -56,8 +57,8 @@
         </div>
         <div class="row justify-content-center px-3 py-3 pt-5">
             <div class="col text-center">
-                <p class="mb-0">*These statement have not evaluated by the Food and Drug Addministrations.</p>
-                <p>This product is not intented to diagonse,treat,cure, or prevent any disease.</p>
+                <p class="mb-0">Detta är en testbutik gjord i utbildningssyfte.</p>
+                <p>Grupp 11 - Emilia, Tea, Susanna, Ivy och Mohammed.</p>
             </div>
         </div>
     </footer>
