@@ -60,6 +60,9 @@
                 <p>This product is not intented to diagonse,treat,cure, or prevent any disease.</p>
             </div>
         </div>
+        <?php 
+				//hämtar search från WP
+				get_search_form();?>
     </footer>
 </div>
 <?php wp_footer(); ?>
