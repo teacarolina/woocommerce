@@ -34,11 +34,16 @@ function load_js() {
   add_action('after_setup_theme', 'add_themes_features');
 
 
-  /* ska eventuellt testa detta sen för footer
-  function custom_menu() {
-    register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
+
+  function wpb_custom_new_menu() {
+    register_nav_menu('header',__( 'My Custom Header Menu' ));
+    register_nav_menu('top_header',__( 'My Custom Header Menu Top Part' ));
+    register_nav_menu('middle_header',__( 'My Custom Header Menu Middle Part' ));
   }
-  add_action( 'init', 'custom_menu' ); */
+  add_action( 'init', 'wpb_custom_new_menu' );
+
+  
+
 
   add_action('wp_head','quadlayers_checkout_style');
 
