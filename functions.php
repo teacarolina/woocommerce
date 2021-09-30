@@ -39,6 +39,9 @@ function load_js() {
     register_nav_menu('header',__( 'My Custom Header Menu' ));
     register_nav_menu('top_header',__( 'My Custom Header Menu Top Part' ));
     register_nav_menu('middle_header',__( 'My Custom Header Menu Middle Part' ));
+//menus for footer below
+register_nav_menu('categories_footer',__( 'My Custom Footer Menu Categories' ));
+register_nav_menu('about_us_footer',__( 'My Custom Footer Menu About Us' ));
   }
   add_action( 'init', 'wpb_custom_new_menu' );
 
@@ -90,8 +93,6 @@ add_filter( 'woocommerce_enable_order_notes_field', '__return_false', 9999 );
 //tar bort sidebar på produktsidor
 remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 
-/* 
-ska eventuellt testa detta sen för footer
 function addWidgets() {
   register_sidebar(
     array(
@@ -99,6 +100,18 @@ function addWidgets() {
       'id' => 'categories'
     )
     );
+    register_sidebar(
+      array(
+        'name' => 'about_us',
+        'id' => 'about_us'
+      )
+      );
+      register_sidebar(
+        array(
+          'name' => 'social_media',
+          'id' => 'social_media'
+        )
+        );
   }
-  add_action('widgets_init', 'addWidgets'); */
+  add_action('widgets_init', 'addWidgets');
 ?>
