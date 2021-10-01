@@ -48,7 +48,8 @@ function load_js() {
   add_action('wp_head','quadlayers_checkout_style');
 
 //css på checkout sidan
-function quadlayers_checkout_style(){
+
+/* function quadlayers_checkout_style(){
          if(is_checkout()==true){
 
                  echo '<style> .col2-set{padding:20px!important;} 
@@ -57,7 +58,7 @@ function quadlayers_checkout_style(){
                  #order_review_heading{padding:20px!important;}
                  .woocommerce-checkout-review-order{padding:20px!important;}<style>';
          }
-}
+} */
 
 add_action('wp_head','quadlayers_cart_style');
 
