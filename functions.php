@@ -112,6 +112,12 @@ function addWidgets() {
           'id' => 'social_media'
         )
         );
+        register_sidebar(
+          array(
+            'name' => 'newsletter',
+            'id' => 'newsletter'
+          )
+          );
   }
   add_action('widgets_init', 'addWidgets');
 ?>

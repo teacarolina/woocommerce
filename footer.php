@@ -13,7 +13,7 @@
             </div>
         </div>
     </div> -->
-    <footer>
+    <footer id="footer">
         
         <div class="row justify-content-around mb-0 pt-5 mx-4">
             
@@ -64,8 +64,14 @@
                 </ul>
             </div>
             <div class="col-xl-auto col-md-6 col-12 pt-4 my-sm-0 order-6 ">
-                <div class="form-group "><label for="email" class="mb-3"><b>Prenumerera på vårt nyhetsbrev och få 10% rabatt</b></label><input type="email" class="form-control form-control-lg" placeholder="Fyll i email" id="email"></div><button type="button" class="btn btn-primary btn-lg btn-block my-2 Subscribe mt-4 mb-3">Prenumerera</button>
-            </div>
+            <label for="email" class="mb-3"><b>Prenumerera på vårt nyhetsbrev och få 10% rabatt</b></label>
+            <ul class="list-unstyled"><?php dynamic_sidebar('newsletter');?></ul></div>
+            <!-- <div class="col-xl-auto col-md-6 col-12 pt-4 my-sm-0 order-6 ">
+                <div class="form-group ">
+                    <label for="email" class="mb-3"><b>Prenumerera på vårt nyhetsbrev och få 10% rabatt</b></label>
+                    <input type="email" class="form-control form-control-lg" placeholder="Fyll i email" id="email"></div>
+                    <button type="button" class="btn btn-primary btn-lg btn-block my-2 Subscribe mt-4 mb-3">Prenumerera</button>
+            </div> -->
         </div>
         <div class="row justify-content-center px-3 py-3 pt-5">
             <div class="col text-center">
@@ -73,9 +79,6 @@
                 <p>Grupp 11 - Emilia, Tea, Susanna, Ivy och Mohammed.</p>
             </div>
         </div>
-        <?php 
-				//hämtar search från WP
-				get_search_form();?>
     </footer>
 </div>
 <?php wp_footer(); ?>
