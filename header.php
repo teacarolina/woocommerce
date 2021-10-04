@@ -84,7 +84,7 @@
                                          </div> 
                                         
                                          <!-- <button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button> -->
-                                    <!-- </form> -->
+                                    
                                 </div>
                             </div>
                         </div>
