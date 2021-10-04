@@ -1552,13 +1552,18 @@ p {
 }
 
 li:not(:first-child) {
-    color: rgb(196, 193, 193) !important
+    color: rgb(196, 193, 193) !important;
 }
 
 /* body .woocommerce table.shop_table td {
     background-color: red;
 } */
-/* .woocommerce-MyAccount-navigation {
-    background-color: rgb(196, 193, 193);
-} */
+.woocommerce-MyAccount-navigation {
+    background-color: rgb(250, 244, 244) !important;
+    padding: 30px;
+} 
+
+.woocommerce-MyAccount-navigation a {
+    color: #a19a9a;
+}
 
