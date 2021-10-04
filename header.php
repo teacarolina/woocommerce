@@ -74,6 +74,7 @@
                                              <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
                                             
                                              <ul class="custom_list clc">
+                                                 
                                                     <li><a class="clc" href="#">Kategorier</a></li>
                                                     <li><a class="clc" href="#">Bestick</a></li>
                                                     <li><a class="clc" href="#">Tallrikar</a></li>
