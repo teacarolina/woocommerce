@@ -10,7 +10,7 @@
 }
 
 #head-pic{
-    max-height: 25rem;
+    max-height: 26rem;
     min-height: 16rem;
     background-repeat: no-repeat;
     width: 100%;
@@ -18,10 +18,20 @@
     z-index: -2;
 }
 
-#category-pics{
+.woocommerce .products ul, .woocommerce ul.products{
+    display: flex;
+    justify-content: space-between;
+}
+.woocommerce ul.products li.product a img{
+    justify-content: space-between;
     margin-top: 40px;
-    height: 1600px;
-    width: 1600px;
+    max-height: 1600px;
+    max-width: 1600px;
+    min-width: 300px;
+    min-height: 300px;
+}
+#category-pics{
+  
 }
 
 body {
