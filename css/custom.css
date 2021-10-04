@@ -9,18 +9,28 @@
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px
 }
 
-#head-pic{
-    max-height: 25rem;
+#head-pic{ /* Gäller först "huvudbilden" på frontpage */
+    max-height: 26rem;
     min-height: 16rem;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover; 
 }
-
-#category-pics{
+/* Gäller categori bilderna på frontpage */
+.woocommerce .products ul, .woocommerce ul.products{
+    display: flex;
+    justify-content: space-between;
+}
+.woocommerce ul.products li.product a img{ /* Gäller categori bilderna på frontpage */
+    justify-content: space-between;
     margin-top: 40px;
-    height: 1600px;
-    width: 1600px;
+    max-height: 1600px;
+    max-width: 1600px;
+    min-width: 300px;
+    min-height: 300px;
+}
+#category-pics{
+  
 }
 
 body {
@@ -723,11 +733,17 @@ select option {
     border-bottom-right-radius: 5px
 }
 
+.woocommerce #searchsubmit {
+    background-color: brown;
+}
+
+
+
 .wishlist_cart {
     height: 90px
 }
 
-.wishlist {
+/* .wishlist {
     margin-right: 50px
 }
 
@@ -760,7 +776,7 @@ select option {
     margin-top: -2px;
     color: #a3a3a3;
     font-size: 14px
-}
+} */
 
 .cart_count {
     position: absolute;
@@ -1253,6 +1269,8 @@ select option {
     }
 }
 
+
+
 @media only screen and (max-width: 767px) {
     .header_search {
         display: none
@@ -1552,3 +1570,15 @@ li:not(:first-child) {
     .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1,.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
     max-width: unset;
     }
+
+/* body .woocommerce table.shop_table td {
+    background-color: red;
+} */
+.woocommerce-MyAccount-navigation {
+    background-color: rgb(250, 244, 244) !important;
+    padding: 30px;
+} 
+
+.woocommerce-MyAccount-navigation a {
+    color: #a19a9a;
+}
