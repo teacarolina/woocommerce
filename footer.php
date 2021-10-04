@@ -61,9 +61,7 @@
                 <p>Grupp 11 - Emilia, Tea, Susanna, Ivy och Mohammed.</p>
             </div>
         </div>
-        <?php 
-				//hämtar search från WP
-				get_search_form();?>
+        
     </footer>
 </div>
 <?php wp_footer(); ?>
