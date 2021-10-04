@@ -74,6 +74,7 @@
                                              <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
                                             
                                              <ul class="custom_list clc">
+                                                 
                                                     <li><a class="clc" href="#">Kategorier</a></li>
                                                     <li><a class="clc" href="#">Bestick</a></li>
                                                     <li><a class="clc" href="#">Tallrikar</a></li>
@@ -84,7 +85,7 @@
                                          </div> 
                                         
                                          <!-- <button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button> -->
-                                    <!-- </form> -->
+                                    
                                 </div>
                             </div>
                         </div>
