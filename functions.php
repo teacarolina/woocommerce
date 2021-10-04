@@ -75,6 +75,17 @@ function quadlayers_cart_style(){
   }
 }
 
+function searchfilter($query) {
+ 
+  if ($query->is_search && !is_admin() ) {
+      $query->set('post_type',array('product','post'));
+  }
+
+return $query;
+}
+
+add_filter('pre_get_posts','searchfilter');
+
 add_action('wp_head','quadlayers_category_style');
 
 //css på category sidorna 

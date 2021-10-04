@@ -9,6 +9,8 @@
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px
 }
 
+
+
 #head-pic{
     max-height: 25rem;
     min-height: 16rem;
@@ -723,11 +725,17 @@ select option {
     border-bottom-right-radius: 5px
 }
 
+.woocommerce #searchsubmit {
+    background-color: brown;
+}
+
+
+
 .wishlist_cart {
     height: 90px
 }
 
-.wishlist {
+/* .wishlist {
     margin-right: 50px
 }
 
@@ -760,7 +768,7 @@ select option {
     margin-top: -2px;
     color: #a3a3a3;
     font-size: 14px
-}
+} */
 
 .cart_count {
     position: absolute;
@@ -1253,6 +1261,8 @@ select option {
     }
 }
 
+
+
 @media only screen and (max-width: 767px) {
     .header_search {
         display: none
@@ -1544,3 +1554,11 @@ p {
 li:not(:first-child) {
     color: rgb(196, 193, 193) !important
 }
+
+/* body .woocommerce table.shop_table td {
+    background-color: red;
+} */
+/* .woocommerce-MyAccount-navigation {
+    background-color: rgb(196, 193, 193);
+} */
+
