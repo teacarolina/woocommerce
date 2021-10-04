@@ -25,18 +25,22 @@
                             <div class="top_bar_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918597/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">kontakt@porslinarkivet.se</a>
                         </div>
                         <div class="top_bar_content ml-auto">
-                            <div class="top_bar_menu">
-                                <ul class="standard_dropdown top_bar_dropdown">
                         
-                                    <li> <a href="#">SEK<i class="fas fa-chevron-down"></i></a>
-                                        
-                                    </li>
-                                </ul>
-                            </div>
+                
                             <div class="top_bar_user">
+                           
                                 <div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" alt=""></div>
-                                <div><a href="#">Registrera</a></div>
-                                <div><a href="#">Logga in</a></div>
+                               
+                                <?php       
+				//hämtar menu
+ wp_nav_menu( array( 
+    'theme_location' => 'top_header', 
+    'container_class' => 'custom-menu-class' ) );   
+    ?>
+
+
+                                <!-- <div><a href="#">Registrera</a></div>
+                                <div><a href="#">Logga in</a></div> -->
                             </div>
                         </div>
                     </div>
@@ -58,19 +62,30 @@
                         <div class="header_search">
                             <div class="header_search_content">
                                 <div class="header_search_form_container">
-                                    <form action="#" class="header_search_form clearfix"> <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
-                                        <div class="custom_dropdown" style="display: none;">
-                                            <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
-                                                <ul class="custom_list clc">
+                                    
+                                <?php 
+				//hämtar search från WP
+				get_search_form();?>
+                                    
+                                   
+                                     <div class="custom_dropdown" style="display: none;"> 
+
+
+                                             <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
+                                            
+                                             <ul class="custom_list clc">
+                                                 
                                                     <li><a class="clc" href="#">Kategorier</a></li>
                                                     <li><a class="clc" href="#">Bestick</a></li>
                                                     <li><a class="clc" href="#">Tallrikar</a></li>
                                                     <li><a class="clc" href="#">Glas</a></li>
                                 
-                                                </ul>
-                                            </div>
-                                        </div> <button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button>
-                                    </form>
+                                                </ul> 
+                                             </div> 
+                                         </div> 
+                                        
+                                         <!-- <button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button> -->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -78,20 +93,23 @@
                     <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
                         <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
                             <div class="wishlist d-flex flex-row align-items-center justify-content-end">
-                                <div class="wishlist_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918681/heart.png" alt=""></div>
-                                <div class="wishlist_content">
-                                    <div class="wishlist_text"><a href="#">Önskelista</a></div>
-                                    <div class="wishlist_count">10</div>
-                                </div>
+                                
                             </div> <!-- Cart -->
                             <div class="cart">
                                 <div class="cart_container d-flex flex-row align-items-center justify-content-end">
                                     <div class="cart_icon"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918704/cart.png" alt="">
-                                        <div class="cart_count"><span>3</span></div>
+                                        <div class="cart_count"><span><?php global $woocommerce; 
+    echo $woocommerce->cart->cart_contents_count;?></span></div>
                                     </div>
                                     <div class="cart_content">
-                                        <div class="cart_text"><a href="#">Varukorg</a></div>
-                                        <div class="cart_price">500 kr</div>
+                                    
+                                        <div class="cart_text"><a href="#"><?php       
+				//hämtar menu
+wp_nav_menu( array( 
+    'theme_location' => 'middle_header', 
+    'container_class' => 'custom-menu-class' ) );  ?></a></div>
+                                        <div class="cart_price"><?php global $woocommerce; 
+    echo $woocommerce->cart->cart_contents_total; ?> SEK</div>
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +127,17 @@
                             <!-- Main Nav Menu -->
                             <div class="main_nav_menu">
                                 <ul class="standard_dropdown main_nav_dropdown">
-                                    <li><a href="#">Hem<i class="fas fa-chevron-down"></i></a></li>
+                                <?php       
+				//hämtar menu
+wp_nav_menu( array( 
+    'theme_location' => 'header', 
+    'container_class' => 'custom-menu-class' ) );  ?>
+
+                                    <li>
+     
+
+
+                                   <!--  <a href="#">Hem<i class="fas fa-chevron-down"></i></a></li>
                                     <li class="hassubs"> <a href="#">Kategorier<i class="fas fa-chevron-down"></i></a>
                                         <ul>
                                             <li> <a href="#">Bestick<i class="fas fa-chevron-down"></i></a>
@@ -132,7 +160,7 @@
                                             <li><a href="product.html">Våra butiker<i class="fas fa-chevron-down"></i></a></li>
                                             <li><a href="blog.html">Blogg<i class="fas fa-chevron-down"></i></a></li>
                                             
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                 </ul>
                             </div> <!-- Menu Trigger -->
@@ -157,11 +185,12 @@
                             <div class="page_menu_search">
                                 <form action="#"> <input type="search" required="required" class="page_menu_search_input" placeholder="Search for products..."> </form>
                             </div>
-        
+                            
                                 <li class="page_menu_item"> <a href="#">Hem<i class="fa fa-angle-down"></i></a> </li>
-                
+                                
                                 <li class="page_menu_item has-children"> <a href="#">Kategorier<i class="fa fa-angle-down"></i></a>
                                     <ul class="page_menu_selection">
+                                  
                                         <li><a href="#">Kategorier<i class="fa fa-angle-down"></i></a></li>
                                         <li><a href="#">Bestick<i class="fa fa-angle-down"></i></a></li>
                                         <li><a href="#">Tallrikar<i class="fa fa-angle-down"></i></a></li>
@@ -195,5 +224,5 @@
             </div>
         </div>
     </header>
-    <div style="height: 700px"> </div>
+    <div style="height: 10px"> </div>	
 </div>

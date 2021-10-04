@@ -9,6 +9,22 @@
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px
 }
 
+
+
+#head-pic{
+    max-height: 25rem;
+    min-height: 16rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover; 
+}
+
+#category-pics{
+    margin-top: 40px;
+    height: 1600px;
+    width: 1600px;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
@@ -27,7 +43,7 @@ div {
 
 ul {
     list-style: none;
-    margin-bottom: 0px
+    margin-bottom: 0px;
 }
 
 p {
@@ -78,9 +94,9 @@ p a:hover::after {
     opacity: 0.2
 }
 
-::selection {}
+/* ::selection {} */
 
-p::selection {}
+/* p::selection {} */
 
 h1 {
     font-size: 48px
@@ -115,13 +131,13 @@ h6 {
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px
 }
 
-h1::selection,
+/* h1::selection,
 h2::selection,
 h3::selection,
 h4::selection,
 h5::selection,
 h6::selection {}
-
+ */
 .form-control {
     color: #db5246
 }
@@ -196,7 +212,7 @@ section {
 
 .super_container {
     width: 100%;
-    overflow: hidden
+    /*overflow: hidden*/
 }
 
 .prlx_parent {
@@ -213,7 +229,7 @@ section {
 
 .button {
     display: inline-block;
-    background: #0e8ce4;
+    background: #D2B48C;
     border-radius: 5px;
     height: 48px;
     -webkit-transition: all 200ms ease;
@@ -252,7 +268,7 @@ section {
 }
 
 .header.scrolled .top_bar {
-    display: none
+    display: none;
 }
 
 .top_bar_contact {
@@ -352,7 +368,7 @@ section {
 }
 
 .standard_dropdown li a:hover {
-    color: #0e8ce4
+    color: #c9bda1;
 }
 
 .standard_dropdown li a i {
@@ -386,12 +402,14 @@ section {
 .standard_dropdown li:hover>ul {
     top: 100%;
     visibility: visible;
-    opacity: 1
+    opacity: 1;
+    z-index: 1
 }
 
 .standard_dropdown ul ul {
     left: 100%;
-    top: 0 !important
+    top: 0 !important;
+    z-index: 1
 }
 
 .top_bar_user {
@@ -451,7 +469,7 @@ section {
 }
 
 .top_bar_user a:hover {
-    color: #8a8a8a
+    color: #8a8a8a;
 }
 
 .header_main {
@@ -472,7 +490,8 @@ section {
 }
 
 .logo_container {
-    height: 90px
+    height: 90px;
+    width: 300px;
 }
 
 .logo {
@@ -486,14 +505,14 @@ section {
 }
 
 .logo-image{
-    width: 150%;
-    height: 150%;
+    width: 300px;
+    height: 300px;
 }
 
 .logo a {
     font-size: 36px;
     font-weight: 500;
-    color: #0e8ce4
+    color: #c9bda1;
 }
 
 .header_search {
@@ -573,7 +592,7 @@ section {
     width: calc((100% - 50px) * 0.399);
     height: 50px;
     float: left;
-    padding-left: 26px
+    padding-left: 26px;
 }
 
 .custom_dropdown::before {
@@ -601,7 +620,7 @@ section {
     -moz-transform: translateY(-1px);
     -ms-transform: translateY(-1px);
     -o-transform: translateY(-1px);
-    transform: translateY(-1px)
+    transform: translateY(-1px);
 }
 
 .custom_dropdown_placeholder {
@@ -628,7 +647,7 @@ section {
     -moz-transition: opacity 0.2s ease;
     -ms-transition: opacity 0.2s ease;
     -o-transition: opacity 0.2s ease;
-    transition: all 0.2s ease
+    transition: all 0.2s ease;
 }
 
 .custom_list.active {
@@ -663,7 +682,7 @@ section {
 }
 
 .custom_list li a:hover {
-    color: #0e8ce4
+    color: #D2B48C;
 }
 
 select {
@@ -698,7 +717,7 @@ select option {
     right: 0;
     width: 50px;
     height: 100%;
-    background: #0e8ce4;
+    background: #c9bda1;
     border: none;
     outline: none;
     cursor: pointer;
@@ -706,11 +725,17 @@ select option {
     border-bottom-right-radius: 5px
 }
 
+.woocommerce #searchsubmit {
+    background-color: brown;
+}
+
+
+
 .wishlist_cart {
     height: 90px
 }
 
-.wishlist {
+/* .wishlist {
     margin-right: 50px
 }
 
@@ -734,14 +759,16 @@ select option {
 }
 
 .wishlist_text a:hover {
-    color: #0e8ce4
+
+    color: #c9bda1
+
 }
 
 .wishlist_count {
     margin-top: -2px;
     color: #a3a3a3;
     font-size: 14px
-}
+} */
 
 .cart_count {
     position: absolute;
@@ -749,7 +776,7 @@ select option {
     right: -14px;
     width: 23px;
     height: 23px;
-    background: #0e8ce4;
+    background: #c9bda1;
     border-radius: 50%;
     text-align: center
 }
@@ -786,7 +813,9 @@ select option {
 }
 
 .cart_text a:hover {
-    color: #0e8ce4
+
+    color: #c9bda1
+
 }
 
 .cart_price {
@@ -821,7 +850,7 @@ select option {
 .cat_menu_container {
     width: 293px;
     height: 100%;
-    background: #0e8ce4;
+    background: #c9bda1;
     padding-left: 35px;
     cursor: pointer;
     z-index: 1
@@ -915,7 +944,7 @@ select option {
 }
 
 .cat_menu li a:hover {
-    color: #0e8ce4
+    color: #c9bda1
 }
 
 .cat_menu li a i {
@@ -1007,7 +1036,7 @@ select option {
 
 .page_menu_content {
     height: 0px;
-    background: #0e8ce4;
+    background: #c9bda1;
     padding-left: 15px;
     padding-right: 15px;
     overflow: hidden
@@ -1033,7 +1062,9 @@ select option {
     display: block;
     position: relative;
     border-bottom: solid 1px rgba(255, 255, 255, 0.1);
-    vertical-align: middle
+
+    /* vertical-align: middle; */
+
 }
 
 .page_menu_item>a {
@@ -1068,7 +1099,7 @@ select option {
     margin: 0;
     width: 100%;
     height: 0px;
-    overflow: hidden;
+   overflow: hidden;
     z-index: 1
 }
 
@@ -1181,7 +1212,7 @@ select option {
     }
 
     .main_nav_content {
-        background: #0e8ce4
+        background: #c9bda1;
     }
 
     .menu_trigger_container {
@@ -1229,6 +1260,8 @@ select option {
         width: 12px
     }
 }
+
+
 
 @media only screen and (max-width: 767px) {
     .header_search {
@@ -1461,7 +1494,7 @@ li:first-child {
 }
 
 footer {
-    background-color: #383431 !important;
+    background-color: #7e7562 !important;
     color: #FFFFFF !important
 }
 
@@ -1473,6 +1506,39 @@ p {
     font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
     color: rgb(196, 193, 193) !important
 } */
+
+.widgettitle{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#menu-footer-about-us{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#menu-item-373 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#menu-item-356 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#menu-footer-categories{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#footer a{
+    color: #FFFFFF;
+}
+
+#footer a:hover{
+    color: #FFFFFF;
+}
 
 .social {
     position: relative;
@@ -1486,5 +1552,18 @@ p {
 }
 
 li:not(:first-child) {
-    color: rgb(196, 193, 193) !important
+    color: rgb(196, 193, 193) !important;
 }
+
+/* body .woocommerce table.shop_table td {
+    background-color: red;
+} */
+.woocommerce-MyAccount-navigation {
+    background-color: rgb(250, 244, 244) !important;
+    padding: 30px;
+} 
+
+.woocommerce-MyAccount-navigation a {
+    color: #a19a9a;
+}
+
