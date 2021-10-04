@@ -13,11 +13,11 @@ get_header();?>
                         <?php
                    
                  
-                   echo do_shortcode('[product_categories]');
+                   //echo do_shortcode('[product_categories]');
                ?>
                     </div>
                     
-                <div class="container">
+                <!-- <div class="container">
                     <div class="row">
                         <div class="col">
 		                    <div id="category-pics">
@@ -27,11 +27,12 @@ get_header();?>
                 </div>
                     </div>
                         </div>
-                            </div>
+                            </div> -->
                     </div>
                 </div>
             </div>
         </div>
+        <br/>
         <?php if(have_posts()) : while(have_posts()) : the_post(); the_content();?>
                             <?php
                     

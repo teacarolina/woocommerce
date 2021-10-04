@@ -490,7 +490,8 @@ section {
 }
 
 .logo_container {
-    height: 90px
+    height: 90px;
+    width: 300px;
 }
 
 .logo {
@@ -504,8 +505,8 @@ section {
 }
 
 .logo-image{
-    width: 150%;
-    height: 150%;
+    width: 300px;
+    height: 300px;
 }
 
 .logo a {
@@ -1493,7 +1494,7 @@ li:first-child {
 }
 
 footer {
-    background-color: #383431 !important;
+    background-color: #7e7562 !important;
     color: #FFFFFF !important
 }
 
@@ -1505,6 +1506,39 @@ p {
     font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
     color: rgb(196, 193, 193) !important
 } */
+
+.widgettitle{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#menu-footer-about-us{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#menu-item-373 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#menu-item-356 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#menu-footer-categories{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#footer a{
+    color: #FFFFFF;
+}
+
+#footer a:hover{
+    color: #FFFFFF;
+}
 
 .social {
     position: relative;
