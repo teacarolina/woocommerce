@@ -9,7 +9,7 @@
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px
 }
 
-#head-pic{
+#head-pic{ /* Gäller först "huvudbilden" på frontpage */
     max-height: 26rem;
     min-height: 16rem;
     background-repeat: no-repeat;
@@ -17,12 +17,12 @@
     background-size: cover; 
     z-index: -2;
 }
-
+/* Gäller categori bilderna på frontpage */
 .woocommerce .products ul, .woocommerce ul.products{
     display: flex;
     justify-content: space-between;
 }
-.woocommerce ul.products li.product a img{
+.woocommerce ul.products li.product a img{ /* Gäller categori bilderna på frontpage */
     justify-content: space-between;
     margin-top: 40px;
     max-height: 1600px;
