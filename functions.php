@@ -48,19 +48,19 @@ register_nav_menu('about_us_footer',__( 'My Custom Footer Menu About Us' ));
   
 
 
-  add_action('wp_head','quadlayers_checkout_style');
+add_action('wp_head','quadlayers_checkout_style'); 
 
 //css på checkout sidan
-function quadlayers_checkout_style(){
+
+/* function quadlayers_checkout_style(){
          if(is_checkout()==true){
 
-                 echo '<style> .col2-set{padding:20px!important;} 
-                 .woocommerce-billing-fields__field-wrapper{width:300px!important;}
-                 .input-text{color:black!important;}
+                 echo '<style>
                  #order_review_heading{padding:20px!important;}
-                 .woocommerce-checkout-review-order{padding:20px!important;}<style>';
+                 .woocommerce-checkout-review-order{padding:20px!important;}
+                 #place_order{background-color: green!important;}<style>';
          }
-}
+} */
 
 add_action('wp_head','quadlayers_cart_style');
 
@@ -71,7 +71,9 @@ function quadlayers_cart_style(){
           echo '<style> .woocommerce-cart-form{padding:20px!important;}
           .product-thumbnail{width:15%!important; height:15%!important;}
           .input-text{color:black!important;}
-          #coupon_code{width:150px!important; height:45px!important;}<style>';
+          #coupon_code{width:150px!important; height:45px!important;}
+          .wc-proceed-to-checkout{padding-bottom:10px!important;}
+          .checkout-button{background-color: green!important;}<style>';
   }
 }
 
@@ -94,12 +96,34 @@ function quadlayers_category_style(){
 
           echo '<style> .content-area{padding:20px!important;}
           .size-woocommerce_thumbnail{width:220px!important; height:220px!important;}
+          .onsale{background-color:red!important; font-size: 12px!important;}
+          .attachment-woocommerce_thumbnail{width:300px!important; height:300px!important;}
+          .woocommerce-loop-product__title{font-size: 15px!important;} 
+          .price{font-size: 13px!important;}
+          .button{font-size: 15px!important;} 
+
+          
+          <style>';
+  }
+}
+
+add_action('wp_head','quadlayers_product_style');
+
+function quadlayers_product_style(){
+  if(is_product()==true){
+
+          echo '<style> .site-main{padding:20px!important;}
+          .woocommerce-product-gallery__image{width:220px!important; height:220px!important;}
+          .woocommerce-product-gallery__wrapper{padding-left: 160px!important;}
+          .input-text{height:30px!important; color:black!important;}
+          .single_add_to_cart_button{height:32px!important; background-color: green!important;}
           .onsale{background-color:red!important;}<style>';
   }
 }
 
 //tar bort "Additional notes" på checkout page
-add_filter( 'woocommerce_enable_order_notes_field', '__return_false', 9999 );
+/*
+add_filter( 'woocommerce_enable_order_notes_field', '__return_false', 9999 ); */
 
 //tar bort sidebar på produktsidor
 remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
