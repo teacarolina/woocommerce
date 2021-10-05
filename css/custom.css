@@ -50,7 +50,8 @@ body {
     font-size: 14px;
     font-weight: 400;
     background: #FFFFFF;
-    color: #000000
+    color: #000000;
+    overflow-x: hidden;
 }
 
 div {
@@ -510,13 +511,11 @@ section {
 }
 
 .logo_container {
-   height: 40px;
-   width: 200px;
+   height: 80px;
 }
 
 .logo {
-    top: 100%;
-    right: 5%;
+    top: 50%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -585,6 +584,9 @@ section {
     float: left
 }
 
+.allpagescontent {
+    width: 80vw!important;
+}
 .header_search_input::-webkit-input-placeholder {
     font-size: 16px !important;
     font-weight: 300;
@@ -741,6 +743,10 @@ select option {
     padding: 10px;
     -webkit-appearance: none;
     -moz-appearance: none
+}
+
+.titleloggo {
+    color:#cfae91!important;
 }
 
 .header_search_button {
