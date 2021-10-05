@@ -586,6 +586,20 @@ section {
 
 #contactsubmit {
     color: black!important;
+    padding: 10px;
+}
+.infotext{
+    color: grey;
+}
+.welcome-text{
+    color:#D2B48C;
+}
+.custom-contact-form{
+    margin-left: 15%;
+}
+.contact-phone {
+    margin-left: 11%; 
+
 }
 .allpagescontent {
     width: 80vw!important;
