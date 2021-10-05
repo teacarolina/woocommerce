@@ -48,7 +48,7 @@ register_nav_menu('about_us_footer',__( 'My Custom Footer Menu About Us' ));
   
 
 
-add_action('wp_head','quadlayers_checkout_style'); 
+//add_action('wp_head','quadlayers_checkout_style'); 
 
 //css på checkout sidan
 
@@ -163,4 +163,88 @@ function addWidgets() {
           );
   }
   add_action('widgets_init', 'addWidgets');
+
+
+  /*-- create custom post --*/
+
+
+  // Our custom post type function
+function create_posttype() {
+ 
+    register_post_type( 'butiker',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Butiker' ),
+                'singular_name' => __( 'Butik' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'butiker'),
+            'show_in_rest' => true,
+ 
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+ 
+/*
+* Creating a function to create our CPT
+*/
+ 
+function cpt_butiker() {
+ 
+    // Set UI labels for Custom Post Type (twentytwenty)
+        $labels = array(
+            'name'                => _x( 'Butiker', 'Post Type General Name', 'My Child Theme' ),
+            'singular_name'       => _x( 'Butik', 'Post Type Singular Name', 'My Child Theme' ),
+            'menu_name'           => __( 'Butiker', 'My Child Theme' ),
+            'parent_item_colon'   => __( 'Parent Butik', 'My Child Theme' ),
+            'all_items'           => __( 'Alla Butiker', 'My Child Theme' ),
+            'view_item'           => __( 'Visa Butik', 'My Child Theme' ),
+            'add_new_item'        => __( 'Lägg till ny Butik', 'My Child Theme' ),
+            'add_new'             => __( 'Lägg till ny', 'My Child Theme' ),
+            'edit_item'           => __( 'Editera Butik', 'My Child Theme' ),
+            'update_item'         => __( 'Updatera Butik', 'My Child Theme' ),
+            'search_items'        => __( 'Sök Butik', 'My Child Theme' ),
+            'not_found'           => __( 'Not Found', 'My Child Theme' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'My Child Theme' ),
+        );
+         
+    // Set other options for Custom Post Type
+         
+        $args = array(
+            'label'               => __( 'butiker', 'My Child Theme' ),
+            'description'         => __( 'Butikernas platser', 'My Child Theme' ),
+            'labels'              => $labels,
+            // Features this CPT supports in Post Editor
+            'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+            // You can associate this CPT with a taxonomy or custom taxonomy. 
+            'taxonomies'          => array( 'städer' ),
+            /* A hierarchical CPT is like Pages and can have
+            * Parent and child items. A non-hierarchical CPT
+            * is like Posts.
+            */ 
+            'hierarchical'        => false,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 5,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
+            'capability_type'     => 'post',
+            'show_in_rest' => true,
+     
+        );
+         
+        // Registering your Custom Post Type
+        register_post_type( 'butiker', $args );
+     
+    }
+     
 ?>

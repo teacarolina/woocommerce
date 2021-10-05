@@ -1218,6 +1218,10 @@ select option {
     margin-left: 4px;
     margin-bottom: 20px;
 }
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+}
 
 @media (min-width: 1200px) {
     .container {
