@@ -51,7 +51,8 @@ register_nav_menu('about_us_footer',__( 'My Custom Footer Menu About Us' ));
 add_action('wp_head','quadlayers_checkout_style'); 
 
 //css på checkout sidan
-function quadlayers_checkout_style(){
+
+/* function quadlayers_checkout_style(){
          if(is_checkout()==true){
 
                  echo '<style>
@@ -59,7 +60,7 @@ function quadlayers_checkout_style(){
                  .woocommerce-checkout-review-order{padding:20px!important;}
                  #place_order{background-color: green!important;}<style>';
          }
-}
+} */
 
 add_action('wp_head','quadlayers_cart_style');
 
