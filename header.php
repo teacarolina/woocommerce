@@ -18,74 +18,96 @@
             <div class="container">
                 <div class="row">
                     <div class="col d-flex flex-row">
+                        
                         <div class="top_bar_contact_item">
                             <div class="top_bar_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918577/phone.png" alt=""></div>+46 123 456
                         </div>
                         <div class="top_bar_contact_item">
                             <div class="top_bar_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918597/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com">kontakt@porslinarkivet.se</a>
+                       
                         </div>
+                        
                         <div class="top_bar_content ml-auto">
-                        
-                            <!-- <div class="top_bar_menu">
-                                 <ul class="standard_dropdown top_bar_dropdown">
-                        
-                                    <li> <a href="#">SEK<i class="fas fa-chevron-down"></i></a>
-                                        
-                                    </li> 
-                                </ul> 
-                            </div> -->
-                            <div class="top_bar_user">
-                           
-                                <div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" alt=""></div>
-                               
-                                <?php       
+                        <div class="main_nav_content d-flex flex-row">
+                            <!-- Categories Menu -->
+                            <!-- Main Nav Menu -->
+                            <div class="main_nav_menu">
+                                
+                                <ul class="standard_dropdown main_nav_dropdown">
+                            <?php      
 				//hämtar menu
-/* wp_nav_menu( array( 
-    'theme_location' => 'top_header', 
-    'container_class' => 'custom-menu-class' ) );   */
+wp_nav_menu( array( 
+ 'theme_location' => 'top_header',
+    'container_class' => 'custom-menu-class' ) );   
+    ?></ul></div></div>
+                        
+                 <!--Menyn här??-->
+                          <!--   <div class="top_bar_user">   
+                                <div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" alt=""></div>
+                         
+                                <?php      
+				//hämtar menu
+ //wp_nav_menu( array( 
+   // 'theme_location' => 'top_header',
+    //'container_class' => 'custom-menu-class' ) );   
     ?>
 
-
-                                <!-- <div><a href="#">Registrera</a></div>
-                                <div><a href="#">Logga in</a></div> -->
-                            </div>
+                                <div><a href="#">Registrera</a></div>
+                                <div><a href="#">Logga in</a></div> 
+                            </div> -->
+                            
                         </div>
+                        
                     </div>
                 </div>
+                
             </div>
+            
         </div> <!-- Header Main -->
         <div class="header_main">
             <div class="container">
                 <div class="row">
+
+               
                     <!-- Logo -->
-                    <div class="col-lg-2 col-sm-3 col-3 order-1">
-                        <div class="logo_container">
+                       <!-- Logo -->
+                       <div class="logo_container">
                             <div class="logo"><!-- <a href="#">Logga</a> -->
                             <img class="logo-image" src="<?php echo get_template_directory_uri(); ?>/img/image2vector.svg">
-</div>
+
+
                         </div>
-                    </div> <!-- Search -->
+                        
+                        </div>
+                   <!-- Search -->
                     <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
                         <div class="header_search">
                             <div class="header_search_content">
                                 <div class="header_search_form_container">
-                                    <form action="#" class="header_search_form clearfix"> <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
-                                    <?php 
+                                    
+                                <?php 
 				//hämtar search från WP
-				// get_search_form();?>
-                                    <div class="custom_dropdown" style="display: none;">
-                                            <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
+				get_search_form();?>
+                                    
+                                   
+                                     <div class="custom_dropdown" style="display: none;"> 
+
+
+                                             <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
                                             
-                                            <!-- <ul class="custom_list clc">
+                                             <ul class="custom_list clc">
+                                                 
                                                     <li><a class="clc" href="#">Kategorier</a></li>
                                                     <li><a class="clc" href="#">Bestick</a></li>
                                                     <li><a class="clc" href="#">Tallrikar</a></li>
                                                     <li><a class="clc" href="#">Glas</a></li>
                                 
-                                                </ul> -->
-                                            </div>
-                                        </div> <button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button>
-                                    </form>
+                                                </ul> 
+                                             </div> 
+                                         </div> 
+                                        
+                                         <!-- <button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button> -->
+                                    
                                 </div>
                             </div>
                         </div>
@@ -93,16 +115,19 @@
                     <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
                         <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
                             <div class="wishlist d-flex flex-row align-items-center justify-content-end">
-                                <!-- <div class="wishlist_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918681/heart.png" alt=""></div>
-                                <div class="wishlist_content">
-                                    <div class="wishlist_text"><a href="#">Önskelista</a></div>
-                                    <div class="wishlist_count">10</div>
-                                </div> -->
+                         
+
+                            
+                
+
                             </div> <!-- Cart -->
+                            
                             <div class="cart">
                                 <div class="cart_container d-flex flex-row align-items-center justify-content-end">
                                     <div class="cart_icon"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918704/cart.png" alt="">
-                                        <div class="cart_count"><span>3</span></div>
+                                        <div class="cart_count"><span><?php global $woocommerce; 
+    echo $woocommerce->cart->cart_contents_count;?></span></div>
+    
                                     </div>
                                     <div class="cart_content">
                                     
@@ -111,23 +136,36 @@
 wp_nav_menu( array( 
     'theme_location' => 'middle_header', 
     'container_class' => 'custom-menu-class' ) );  ?></a></div>
-                                        <div class="cart_price">500 kr</div>
+                                        <div class="cart_price"><?php global $woocommerce; 
+    echo $woocommerce->cart->cart_contents_total; ?> SEK</div>
+    
                                     </div>
+                                    
                                 </div>
+                          
                             </div>
+                      
+
                         </div>
+                        
                     </div>
+                   
                 </div>
+                
             </div>
-        </div> <!-- Main Navigation -->
+            
+        </div>
+         <!-- Main Navigation -->
         <nav class="main_nav">
             <div class="container">
                 <div class="row">
                     <div class="col">
+                     
                         <div class="main_nav_content d-flex flex-row">
                             <!-- Categories Menu -->
                             <!-- Main Nav Menu -->
                             <div class="main_nav_menu">
+                                
                                 <ul class="standard_dropdown main_nav_dropdown">
                                 <?php       
 				//hämtar menu
@@ -225,6 +263,7 @@ wp_nav_menu( array(
                 </div>
             </div>
         </div>
+        
     </header>
     <div style="height: 10px"> </div>	
 </div>
