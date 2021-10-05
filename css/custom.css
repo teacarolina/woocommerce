@@ -584,6 +584,9 @@ section {
     float: left
 }
 
+#contactsubmit {
+    color: black!important;
+}
 .allpagescontent {
     width: 80vw!important;
 }

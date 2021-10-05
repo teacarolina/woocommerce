@@ -7,15 +7,15 @@ get_header();?>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <!--<h1>Välkommen att kontakta oss</h1>
+                    <h1>Välkommen att kontakta oss</h1>
                     <p> Fyll i kontaktformuläret till höger så återkommer vi inom 24h</p>
                 </div>
-                <div class="col-md-5">
+            <div class="col-md-5">
                     <div class="row">
                         <div class="col-md-6">
                             <h3 class="text-left">Kontakta oss</h3>
                         </div>
-                    </div>-->
+                    </div>
                     <div class="content-wrapper">
                         <?php echo do_shortcode('[contact-form-7 id="25" title="Contact form 1" ]'); ?></div>
                     <!-- <div class="col-xs-12 col-md-8 col-md-offset-2">
