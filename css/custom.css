@@ -45,10 +45,6 @@ a, select{
     min-height: 300px;x
 }*/
 
-#category-pics{
-  
-}
-
 body {
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
@@ -1613,9 +1609,6 @@ li:not(:first-child) {
 
 .woocommerce-MyAccount-navigation a {
     color: #a19a9a;
-<<<<<<< HEAD
-}
-=======
     
 
 }
@@ -1647,4 +1640,3 @@ li:not(:first-child) {
 }
 
 
->>>>>>> d00e5f255209b264627c705e3241ba42223be4b9
