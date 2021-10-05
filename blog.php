@@ -5,11 +5,27 @@ get_header();?>
 
 <main>
 			<section>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/image2vector.svg" />
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+
+        <h1 class="nav-link">Låt dig inspireras av vår blogg</h1>
+      </li>
+</ul></div>
+</nav>
+</br></br>
 				<div class = "tets"></div>
 				<div class="container">
 					<div class="row">
+						
+						<div class="col">
+						<div class="header-pic">
+</div></div>
 						<div id="primary" class="col-xs-12 col-md-9">
-							<h1>BLOGG!</h1>
+						
 							<?php 
 							// the query
 							$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1)); ?>
@@ -20,24 +36,28 @@ get_header();?>
 							
 								<!-- the loop -->
 								<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-								<article class="article">
-								<?php echo get_the_post_thumbnail(); ?>
-								<h2 class="title">
+								<div class="row">
+								<div class="col-md-8">
+								<h3 class="title">
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-								</h2>
+								</h3>
 								<ul class="meta">
 									<li>
-										<i class="fa fa-calendar"></i> <?php get_the_date(); ?>
+										<i class="fa fa-calendar"></i> <?php the_date(); ?>
 									</li>
-								
-									
 								</ul>
-								<?php echo get_the_excerpt(); ?>
-							</article>
+							<?php echo get_the_post_thumbnail(); ?>
+							</br></br>
+								
+								<div class="container"><p><?php the_content();?></p></div>
+								<?php //the_excerpt(); ?>
+								<p>__________________________________________________________</p>
+							</div>
+							</div>
 								<?php endwhile; ?>
 								<!-- end of the loop -->
 							
-							</ul>
+							
 							
 								<?php wp_reset_postdata(); ?>
 							
@@ -52,9 +72,4 @@ get_header();?>
 			</section>
 		</main>
 
-
-
-<script src="js/script.js"></script>
    <?php get_footer();?>
-</html>
-</body>

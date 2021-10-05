@@ -16,7 +16,11 @@
     height: 38px !important;
 }
 a, select{
-    color: #6e6655 !important;
+    color: #6e6655 ;
+}
+
+.nav-link {
+    color: #6e6655 ;
 }
 
 .wc-block-featured-category{ 

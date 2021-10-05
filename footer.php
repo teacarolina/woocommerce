@@ -17,7 +17,6 @@
                 <ul class="list-unstyled my-xl-4 my-md-3">
                     <li class="li-footer">Copyright</li>
                     <li class="li-footer">&#9400; Porslin Arkivet 2021</li>
-                    <?php dynamic_sidebar('policy');?>
                 </ul>
             </div>
             <div class="col-xl-2 col-md-3 pt-4 order-1">

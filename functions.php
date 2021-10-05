@@ -161,12 +161,6 @@ function addWidgets() {
             'id' => 'newsletter'
           )
           );
-          register_sidebar(
-            array(
-              'name' => 'policy',
-              'id' => 'policy'
-            )
-            );
   }
   add_action('widgets_init', 'addWidgets');
 ?>
