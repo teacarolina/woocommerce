@@ -1164,6 +1164,20 @@ select option {
     -o-transform: translateY(-2px);
     transform: translateY(-2px)
 }
+.mini-headers {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.policy-content{
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.lower-div {
+    margin-top: 10px;
+    color: grey;
+    margin-left: 4px;
+    margin-bottom: 20px;
+}
 
 @media (min-width: 1200px) {
     .container {
