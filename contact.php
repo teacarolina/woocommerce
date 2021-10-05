@@ -25,7 +25,6 @@ get_header();?>
                         </p>
                     </div>
                 </div>
-                <?php echo do_shortcode('[contact-form-7 id="25" title="Contact form 1" ]'); ?>
 
     </section>
 </main>
