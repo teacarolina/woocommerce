@@ -13,7 +13,7 @@ get_header();?>
 
 
                 </div>
-                <div class="col-md-5 border border-secondary mt-5 mb-5">
+                <div class="col-md-5 border border-secondary mt-5 mb-5 inner-contact-form">
                     <div class="row">
                         <div class="col-md-7 mt-3 custom-contact-form">
                             <!--<h3 class="text-left">Kontakta oss</h3>-->
