@@ -116,7 +116,15 @@ function quadlayers_product_style(){
           .woocommerce-product-gallery__wrapper{padding-left: 160px!important;}
           .input-text{height:30px!important; color:black!important;}
           .single_add_to_cart_button{height:32px!important; background-color: green!important;}
-          .onsale{background-color:red!important;}<style>';
+          .onsale{background-color:red!important;}
+          
+          .onsale{background-color:red!important; font-size: 12px!important;}
+          .attachment-woocommerce_thumbnail{width:300px!important; height:300px!important;}
+          .woocommerce-loop-product__title{font-size: 15px!important;} 
+          .price{font-size: 13px!important;}
+          .button{font-size: 15px!important;}
+          .tabs{font-size: 18px!important; }
+          <style>';
   }
 }
 
