@@ -95,7 +95,7 @@ get_header();?>
                         nedan.</p>
                     <div class="lower-div">
                         Porslin Arkivet</br>
-                        Banérgatan 1 115 22<br />
+                        Drottninggatan 21, 111 52<br />
                         E-postadress: kundservice@porslinarkivet.se <br />
                         Telefon: 123 45 67<br />
                         Organisationsnummer:555888-0000<br />
