@@ -21,7 +21,7 @@ button.single_add_to_cart_button{ /*ändra färg på produkt knapp, single produ
 a, select{
     color: #6e6655 !important;
 }
-.promo{
+.promo{ /* härifrån till .link har med kampanjerna att göra */ 
     display: flex;
 }
 .wrapper{
@@ -32,7 +32,7 @@ a, select{
 }
 .text{
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     font-style: italic;
     text-align: center;
     padding: 40px;
@@ -50,11 +50,18 @@ a, select{
     text-align: center;
     font-weight: 520;
 }
-.link{
-    font-size: 28px;
+a.link{
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: white !important;
+    background-color: #7e786a75;
+    padding: 10px;
+    margin-top: 5%;
 }
-.wc-block-featured-category{ 
-    width: 92%;
+.wc-block-featured-category{ /*kategori bilderna */
+    width: 93%;
     margin: 42px;
     min-height: 350px !important;
 }

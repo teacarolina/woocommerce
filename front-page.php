@@ -38,7 +38,7 @@ $data1 = get_field('kampanj2', get_the_ID());
                 </div>
                 <div class="wrapper" style = "background-image: url(<?php echo $data1['bild']['url'] ?>)">
                     <div class="text"><?= $data1['text3'] ?></div>
-                    <a class="link" href="<?= $data1['link'] ?>">klick</a>
+                    <a class="link" href="<?= $data1['link'] ?>">Till kampanjen</a>
                 </div>
             </div>
 	</section>
