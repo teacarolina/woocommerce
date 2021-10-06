@@ -1640,10 +1640,15 @@ li:not(:first-child) {
 
 .woocommerce-MyAccount-navigation a {
     color: #a19a9a;
+    font-size: 20px;
     
-
 }
-
+.woocommerce-MyAccount-navigation a:hover {
+    text-decoration: underline;
+}
+/* li .woocommerce-MyAccount-navigation-link--dashboard {
+    color: blue !important;
+} */
 .woocommerce-MyAccount-content {
     margin: 20px;
 }
@@ -1670,4 +1675,23 @@ li:not(:first-child) {
     margin-left: 10px;
 }
 
+.container-search {
+    display: flex;
+    
+    
+
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+
+.container-search li{
+    margin: 10px;  
+    padding: 20px;
+    list-style-type: none;
+}
+
+.row-search {
+    margin: 10px;
+} 
 
