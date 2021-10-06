@@ -48,7 +48,7 @@ register_nav_menu('about_us_footer',__( 'My Custom Footer Menu About Us' ));
   
 
 
-add_action('wp_head','quadlayers_checkout_style'); 
+//add_action('wp_head','quadlayers_checkout_style'); 
 
 //css på checkout sidan
 

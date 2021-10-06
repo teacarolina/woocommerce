@@ -9,8 +9,11 @@
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px
 }
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{ /*ändra färg på produkt knapp */ 
-    background-color: #c9bda1a6;
+    background-color: #c9bda1a6 !important;
    
+}
+button.single_add_to_cart_button{ /*ändra färg på produkt knapp, single product page */ 
+    background-color: #c9bda1a6 !important;
 }
 .button{
     height: 38px !important;
@@ -18,11 +21,42 @@
 a, select{
     color: #6e6655 !important;
 }
-
+.promo{
+    display: flex;
+}
+.wrapper{
+    height: 500px;
+    width: 550px;
+    margin: 40px;
+    background-position: 50%;
+}
+.text{
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    padding: 40px;
+}
+.text2{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 70px;
+}
+.text3{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 520;
+}
+.link{
+    font-size: 28px;
+}
 .wc-block-featured-category{ 
     width: 92%;
-    height: 20%;
     margin: 42px;
+    min-height: 350px !important;
 }
 #head-pic{ /* Gäller först "huvudbilden" på frontpage */
     max-height: 26rem;
