@@ -28,26 +28,12 @@
                         <div class="top_bar_content ml-auto">
                             <div class="top_bar_menu">
                                 <ul class="standard_dropdown top_bar_dropdown">
-                                  <!--   <li> <a href="#">English<i class="fas fa-chevron-down"></i></a>
-                                        <ul>
-                                            <li><a href="#">Italian</a></li>
-                                            <li><a href="#">Spanish</a></li>
-                                            <li><a href="#">Japanese</a></li>
-                                        </ul>
-                                    </li>
-                                    <li> <a href="#">$ US dollar<i class="fas fa-chevron-down"></i></a>
-                                        <ul>
-                                            <li><a href="#">EUR Euro</a></li>
-                                            <li><a href="#">GBP British Pound</a></li>
-                                            <li><a href="#">JPY Japanese Yen</a></li>
-                                        </ul>
-                                    </li> -->
+                                  
                                 </ul>
                             </div>
                             <div class="top_bar_user">
                                 <div class="user_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918647/user.svg" alt=""></div>
-                                <!-- <div><a href="#">Register</a></div>
-                                <div><a href="#">Sign in</a></div> -->
+                                
                                 <?php      
 				//hämtar menu
 wp_nav_menu( array( 
@@ -97,11 +83,7 @@ wp_nav_menu( array(
                     <div class="col-lg-4 col-9 order-lg-3 order-2 text-lg-left text-right">
                         <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
                             <div class="wishlist d-flex flex-row align-items-center justify-content-end">
-                                <!-- <div class="wishlist_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918681/heart.png" alt=""></div>
-                                <div class="wishlist_content">
-                                    <div class="wishlist_text"><a href="#">Wishlist</a></div>
-                                    <div class="wishlist_count">10</div>
-                                </div> -->
+                                
                             </div> <!-- Cart -->
                             <div class="cart">
                                 <div class="cart_container d-flex flex-row align-items-center justify-content-end">
@@ -116,7 +98,7 @@ wp_nav_menu( array(
     'theme_location' => 'middle_header', 
     'container_class' => 'custom-menu-class' ) );  ?></div>
                                         <div class="cart_price"><?php global $woocommerce; 
-    echo $woocommerce->cart->cart_contents_total; ?> SEK</div>
+    echo $woocommerce->cart->cart_contents_total*1.25; ?> SEK</div>
                                     </div>
                                 </div>
                             </div>
@@ -145,49 +127,7 @@ wp_nav_menu( array(
                     
 
 
-                    
-                                    <!-- <li><a href="#">Home<i class="fas fa-chevron-down"></i></a></li>
-                                    <li class="hassubs"> <a href="#">Laptop<i class="fas fa-chevron-down"></i></a>
-                                        <ul>
-                                            <li> <a href="#">Lenovo<i class="fas fa-chevron-down"></i></a>
-                                                <ul>
-                                                    <li><a href="#">Lenovo 1<i class="fas fa-chevron-down"></i></a></li>
-                                                    <li><a href="#">Lenovo 3<i class="fas fa-chevron-down"></i></a></li>
-                                                    <li><a href="#">Lenovo 2<i class="fas fa-chevron-down"></i></a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">DELL<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="#">APPLE<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="#">HP<i class="fas fa-chevron-down"></i></a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="hassubs"> <a href="#">Featured Brands<i class="fas fa-chevron-down"></i></a>
-                                        <ul>
-                                            <li> <a href="#">APPLE<i class="fas fa-chevron-down"></i></a>
-                                                <ul>
-                                                    <li><a href="#">Laptop<i class="fas fa-chevron-down"></i></a></li>
-                                                    <li><a href="#">Mobiles<i class="fas fa-chevron-down"></i></a></li>
-                                                    <li><a href="#">Ipads<i class="fas fa-chevron-down"></i></a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Samsung<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="#">Lenovo<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="#">DELL<i class="fas fa-chevron-down"></i></a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="hassubs"> <a href="#">Pages<i class="fas fa-chevron-down"></i></a>
-                                        <ul>
-                                            <li><a href="shop.html">Shop<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="product.html">Product<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="blog_single.html">Blog Post<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="regular.html">Regular Post<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="cart.html">Cart<i class="fas fa-chevron-down"></i></a></li>
-                                            <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-                                    <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li> -->
+
                                 </ul>
                             </div> <!-- Menu Trigger -->
                             <div class="menu_trigger_container ml-auto">
@@ -212,64 +152,20 @@ wp_nav_menu( array(
                                 <form action="#"> <input type="search" required="required" class="page_menu_search_input" placeholder="Search for products..."> </form>
                             </div>
                             <ul class="page_menu_nav">
-                                <li class="page_menu_item has-children"> <a href="#">Language<i class="fa fa-angle-down"></i></a>
-                                    <ul class="page_menu_selection">
-                                        <li><a href="#">English<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">Italian<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">Spanish<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">Japanese<i class="fa fa-angle-down"></i></a></li>
-                                    </ul>
-                                </li>
-                                <li class="page_menu_item has-children"> <a href="#">Currency<i class="fa fa-angle-down"></i></a>
-                                    <ul class="page_menu_selection">
-                                        <li><a href="#">US Dollar<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">EUR Euro<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">GBP British Pound<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">JPY Japanese Yen<i class="fa fa-angle-down"></i></a></li>
-                                    </ul>
-                                </li>
-                                <li class="page_menu_item"> <a href="#">Home<i class="fa fa-angle-down"></i></a> </li>
-                                <li class="page_menu_item has-children"> <a href="#">Super Deals<i class="fa fa-angle-down"></i></a>
-                                    <ul class="page_menu_selection">
-                                        <li><a href="#">Super Deals<i class="fa fa-angle-down"></i></a></li>
-                                        <li class="page_menu_item has-children"> <a href="#">Menu Item<i class="fa fa-angle-down"></i></a>
-                                            <ul class="page_menu_selection">
-                                                <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                                <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                                <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                                <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                    </ul>
-                                </li>
-                                <li class="page_menu_item has-children"> <a href="#">Featured Brands<i class="fa fa-angle-down"></i></a>
-                                    <ul class="page_menu_selection">
-                                        <li><a href="#">Featured Brands<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                    </ul>
-                                </li>
-                                <li class="page_menu_item has-children"> <a href="#">Trending Styles<i class="fa fa-angle-down"></i></a>
-                                    <ul class="page_menu_selection">
-                                        <li><a href="#">Trending Styles<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                        <li><a href="#">Menu Item<i class="fa fa-angle-down"></i></a></li>
-                                    </ul>
-                                </li>
-                                <li class="page_menu_item"><a href="blog.html">blog<i class="fa fa-angle-down"></i></a></li>
-                                <li class="page_menu_item"><a href="contact.html">contact<i class="fa fa-angle-down"></i></a></li>
+                                
+                                <li class="page_menu_item"> <?php       
+				//hämtar menu
+wp_nav_menu( array( 
+    'theme_location' => 'header', 
+    'container_class' => 'custom-menu-class' ) );  ?> </li>
+                                
                             </ul>
                             <div class="menu_contact">
                                 <div class="menu_contact_item">
-                                    <div class="menu_contact_icon"><img src="images/phone_white.png" alt=""></div>+38 068 005 3570
+                                    <div class="menu_contact_icon"><img src="images/phone_white.png" alt=""></div>+46 8 123 456 78
                                 </div>
                                 <div class="menu_contact_item">
-                                    <div class="menu_contact_icon"><img src="images/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">fastsales@gmail.com</a>
+                                    <div class="menu_contact_icon"><img src="images/mail_white.png" alt=""></div><a href="mailto:fastsales@gmail.com">info@porslinarkivet.se</a>
                                 </div>
                             </div>
                         </div>
