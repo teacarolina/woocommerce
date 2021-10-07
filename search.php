@@ -14,9 +14,6 @@ get_header();
 ?>
 <main>
 			<section>
-				
-					  
-						<!-- <div class="col-xs-12">  -->
 							
                             
 						<?php
@@ -25,7 +22,7 @@ $args = array(
 	's' =>$s,
 										
 			'post_type' => 'product'
-			//'posts_per_page' => 12
+			
 			);
 		$loop = new WP_Query( $args );
 		if ( $loop->have_posts() ) { ?>
@@ -41,8 +38,6 @@ $args = array(
 		}
 		wp_reset_postdata(); ?>
 
-		
-		<!-- </div> -->
 	  
 </div>
 </section>
