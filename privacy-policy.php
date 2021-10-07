@@ -7,7 +7,7 @@ get_header();?>
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <!--<h2 class="mini-headers">Integritetspolicy för Porslin Arkivet</h2>
+                    <h2 class="mini-headers">Integritetspolicy för Porslin Arkivet</h2>
 
                     <p class="policy-content">
                         Vi värnar om din personliga integritet och eftersträvar alltid en hög nivå
@@ -91,15 +91,15 @@ get_header();?>
 
                         Har du fortfarande frågor om hur vi behandlar dina uppgifter efter att ha läst denna
                         policy?<br />
-                    <p class="policy-content">Välkommen att kontakta oss i din lokala WooCommerce Butik eller enligt
+                    <p class="policy-content">Välkommen att kontakta oss i din lokala Porslin Arkivet butik eller enligt
                         nedan.</p>
                     <div class="lower-div">
                         Porslin Arkivet</br>
                         Drottninggatan 21, 111 52<br />
-                        E-postadress: kundservice@porslinarkivet.se <br />
-                        Telefon: 123 45 67<br />
+                        E-postadress: info@porslinarkivet.se <br />
+                        Telefon: 08 - 123 456 78<br />
                         Organisationsnummer:555888-0000<br />
-                    </div>-->
+                    </div>
                 </div>
             </div>
         </div>

@@ -17,11 +17,9 @@ add_action('wp_enqueue_scripts', 'load_stylesheets');
 
 function load_js() {
     wp_register_script('script', get_template_directory_uri() . '/js/script.js', array('jquery'), null, true);
-    // wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
     wp_enqueue_script( 'jquery' );
 
     wp_enqueue_script('script');
-    // wp_enqueue_scripts('jquery');
    
   }
 
@@ -46,21 +44,6 @@ register_nav_menu('about_us_footer',__( 'My Custom Footer Menu About Us' ));
   add_action( 'init', 'wpb_custom_new_menu' );
 
   
-
-
-//add_action('wp_head','quadlayers_checkout_style'); 
-
-//css på checkout sidan
-
-/* function quadlayers_checkout_style(){
-         if(is_checkout()==true){
-
-                 echo '<style>
-                 #order_review_heading{padding:20px!important;}
-                 .woocommerce-checkout-review-order{padding:20px!important;}
-                 #place_order{background-color: green!important;}<style>';
-         }
-} */
 
 add_action('wp_head','quadlayers_cart_style');
 
@@ -128,10 +111,6 @@ function quadlayers_product_style(){
           <style>';
   }
 }
-
-//tar bort "Additional notes" på checkout page
-/*
-add_filter( 'woocommerce_enable_order_notes_field', '__return_false', 9999 ); */
 
 //tar bort sidebar på produktsidor
 remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);

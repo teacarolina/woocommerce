@@ -1,3 +1,2 @@
 <?php
-//silece and testing
-//teständring
+//silece

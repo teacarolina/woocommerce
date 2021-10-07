@@ -44,7 +44,7 @@ get_header();?>
 							</br></br>
 								
 								<div class="container"><p><?php the_content();?></p></div>
-								<?php //the_excerpt(); ?>
+							
 							</div>
 							</div>
 								<?php endwhile; ?>

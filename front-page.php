@@ -15,21 +15,9 @@ $data1 = get_field('kampanj2', get_the_ID());
 		            <div class="header-pic">
                         <img id="head-pic" src="<?php echo get_template_directory_uri(); ?>/img/headchampagne.jpg" />
                         
-                        <?php
-                            //echo do_shortcode('[product_categories]');
-                        ?>
-                    </div>
-                    
-                    </div>
-                </div>
-            </div>
-        
+    
         <br/>
-        <?php if(have_posts()) : while(have_posts()) : the_post(); the_content();?>
-                            <?php
-                    
-                endwhile; endif;?>
-
+       
             <div class="promo">
                 <div class="wrapper" style = "background-image: url(<?php echo $data['image']['url'] ?>)">
                     <div class="text"><?= $data['text'] ?></div>
@@ -39,6 +27,15 @@ $data1 = get_field('kampanj2', get_the_ID());
                 <div class="wrapper" style = "background-image: url(<?php echo $data1['image']['url'] ?>)">
                     <div class="text"><?= $data1['text3'] ?></div>
                     <a class="link" href="<?= $data1['link'] ?>">Till kampanjen</a>
+                </div>
+            </div>
+            <?php if(have_posts()) : while(have_posts()) : the_post(); the_content();?>
+                            <?php
+                    
+                endwhile; endif;?>
+ </div>
+                    
+                    </div>
                 </div>
             </div>
 	</section>
