@@ -17,7 +17,7 @@ get_header();?>
 </ul></div>
 </nav>
 </br></br>
-				<div class = "tets"></div>
+				
 				<div class="container">
 					<div class="row">
 						
@@ -37,7 +37,7 @@ get_header();?>
 								<!-- the loop -->
 								<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
 								<div class="row">
-								<div class="col-md-8">
+								<div class="col-sm-8">
 								<h3 class="title">
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								</h3>
