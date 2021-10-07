@@ -9,9 +9,12 @@
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px
 }
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{ /*ändra färg på produkt knapp */ 
-    background-color: #c9bda1a6 !important;
-   
+    background-color: #c9bda1a6 !important;  
 }
+.woocommerce a.button.alt{
+    color: #515151;
+}
+
 button.single_add_to_cart_button{ /*ändra färg på produkt knapp, single product page */ 
     background-color: #c9bda1a6 !important;
 }
@@ -77,19 +80,6 @@ a.link{
     width: 100%;
     background-size: cover; 
 }
-/* Gäller categori bilderna på frontpage 
-.woocommerce .products ul, .woocommerce ul.products{
-    display: flex;
-    justify-content: space-between;
-}
-.woocommerce ul.products li.product a img{ /* Gäller categori bilderna på frontpage 
-    justify-content: space-between;
-    margin-top: 40px;
-    max-height: 1600px;
-    max-width: 1600px;
-    min-width: 300px;
-    min-height: 300px;x
-}*/
 
 body {
     font-family: 'Rubik', sans-serif;
@@ -172,7 +162,7 @@ p a:hover::after {
 /* p::selection {} */
 
 h1 {
-    font-size: 48px
+    font-size: 42px
 }
 
 h2 {
