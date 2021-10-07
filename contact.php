@@ -1,4 +1,4 @@
-<?php
+<?php 
 /*Template Name: Contact*/
 get_header();?>
 
@@ -9,6 +9,7 @@ get_header();?>
                 <div class="col-md-4 mt-5 mb-5 welcome-text">
                     <h1>Välkommen att <br />kontakta oss</h1>
                     <i class="infotext"> Fyll i kontaktformuläret till höger så återkommer vi inom 24h</i>
+                    <div><?php echo do_shortcode('[mappress mapid="1"]'); ?> </div>
 
 
 
@@ -16,6 +17,7 @@ get_header();?>
                 <div class="col-md-5 border border-secondary mt-5 mb-5 inner-contact-form">
                     <div class="row">
                         <div class="col-md-7 mt-3 custom-contact-form">
+                            <p>Vad handlar ditt ärende om</p>
 
                             <?php echo do_shortcode('[contact-form-7 id="25" title="Contact form 1" ]'); ?>
                         </div>
