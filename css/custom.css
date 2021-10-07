@@ -18,7 +18,7 @@ button.single_add_to_cart_button{ /*ändra färg på produkt knapp, single produ
 .button{
     height: 38px !important;
 }
-a, select{
+a, select, .woocommerce .woocommerce-ordering select{
     color: #6e6655 ;
 }
 
@@ -62,8 +62,9 @@ a.link{
     color: white !important;
     background-color: #7e786a75;
     padding: 10px;
-    margin-top: 5%;
+    margin-top: 12%;
 }
+
 .wc-block-featured-category{ /*kategori bilderna */
     width: 93%;
     margin: 42px;
