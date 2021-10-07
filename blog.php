@@ -50,7 +50,7 @@ get_header();?>
 							</br></br>
 								
 								<div class="container"><p><?php the_content();?></p></div>
-								<?php //the_excerpt(); ?>
+								
 								<p>__________________________________________________________</p>
 							</div>
 							</div>
