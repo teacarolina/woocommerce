@@ -148,12 +148,18 @@ a:link {
 
 p a:active {
     position: relative;
-    color: #FF6347
+    color: #FFFFFF;
+    list-style: none;
 }
 
 p a:hover {
     color: #FFFFFF;
-    background: #ffa07f
+    list-style: none;
+}
+
+a:hover {
+    color: #917463;
+    list-style: none;
 }
 
 p a:hover::after {
@@ -205,7 +211,7 @@ h5::selection,
 h6::selection {}
  */
 .form-control {
-    color: #db5246
+    color: #FFFFFF;
 }
 
 section {
@@ -1735,4 +1741,11 @@ li:not(:first-child) {
 .row-search {
     margin: 10px;
 } 
-
+/*Nedan är för inputfield på cart och single product page,
+ändra INTE*/
+.woocommerce .quantity .qty {
+    width: 3em;
+    height: 3px;
+    padding: 14px!important;
+    font-size: 20px!important;
+}
