@@ -610,6 +610,11 @@ section {
     margin-left: 11%; 
 
 }
+#contact-ask {
+    margin-left: 4%;
+    font-size: 20px;
+    margin-bottom: 40px
+}
 .allpagescontent {
     width: 80vw!important;
 }

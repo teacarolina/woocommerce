@@ -17,7 +17,7 @@ get_header();?>
                 <div class="col-md-5 border border-secondary mt-5 mb-5 inner-contact-form">
                     <div class="row">
                         <div class="col-md-7 mt-3 custom-contact-form">
-                            <p>Vad handlar ditt ärende om</p>
+                            <p id="contact-ask">Välj ärende nedan:</p>
 
                             <?php echo do_shortcode('[contact-form-7 id="25" title="Contact form 1" ]'); ?>
                         </div>
