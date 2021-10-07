@@ -20,11 +20,10 @@ $data1 = get_field('kampanj2', get_the_ID());
                         ?>
                     </div>
                     
-
                     </div>
                 </div>
             </div>
-        </div>
+        
         <br/>
         <?php if(have_posts()) : while(have_posts()) : the_post(); the_content();?>
                             <?php
@@ -37,7 +36,7 @@ $data1 = get_field('kampanj2', get_the_ID());
                     <div class="text2"><?= $data['text2'] ?></div>
                     <div class="text3"><?= $data['text_2'] ?></div>
                 </div>
-                <div class="wrapper" style = "background-image: url(<?php echo $data1['bild']['url'] ?>)">
+                <div class="wrapper" style = "background-image: url(<?php echo $data1['image']['url'] ?>)">
                     <div class="text"><?= $data1['text3'] ?></div>
                     <a class="link" href="<?= $data1['link'] ?>">Till kampanjen</a>
                 </div>
