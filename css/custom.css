@@ -1090,7 +1090,7 @@ select option {
 .page_menu_search_input {
     width: 100%;
     height: 40px;
-    background: #FFFFFF;
+    background: #FFFFFF !important;
     border: none;
     outline: none;
     padding-left: 25px
