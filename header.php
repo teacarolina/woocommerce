@@ -62,20 +62,16 @@ wp_nav_menu( array(
                                 <?php 
 				//hämtar search från WP
 				get_search_form();?>
-<!--                                     <form action="#" class="header_search_form clearfix"> <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
- -->                                        <div class="custom_dropdown" style="display: none;">
-                                            <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
+                                       <div class="custom_dropdown" style="display: none;">
+                                            <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">Alla kategorier</span> <i class="fas fa-chevron-down"></i>
                                                 <ul class="custom_list clc">
-                                                    <li><a class="clc" href="#">All Categories</a></li>
-                                                    <li><a class="clc" href="#">Computers</a></li>
-                                                    <li><a class="clc" href="#">Laptops</a></li>
-                                                    <li><a class="clc" href="#">Cameras</a></li>
-                                                    <li><a class="clc" href="#">Hardware</a></li>
-                                                    <li><a class="clc" href="#">Smartphones</a></li>
+                                                <li><a class="clc" href="#">Kategorier</a></li>
+                                                <li><a class="clc" href="#">Bestick</a></li>
+                                                <li><a class="clc" href="#">Tallrikar</a></li>
+                                                <li><a class="clc" href="#">Glas</a></li>
                                                 </ul>
                                             </div>
-                                        </div> <!-- <button type="submit" class="header_search_button trans_300" value="Submit"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918770/search.png" alt=""></button>
-                                    </form> -->
+                                        </div> 
                                 </div>
                             </div>
                         </div>
@@ -98,6 +94,7 @@ wp_nav_menu( array(
     'theme_location' => 'middle_header', 
     'container_class' => 'custom-menu-class' ) );  ?></div>
                                         <div class="cart_price"><?php global $woocommerce; 
+    //visar totalbelopp av varor *1.25 för att få med moms
     echo $woocommerce->cart->cart_contents_total*1.25; ?> SEK</div>
                                     </div>
                                 </div>
@@ -122,11 +119,7 @@ wp_nav_menu( array(
     'theme_location' => 'header', 
     'container_class' => 'custom-menu-class' ) );  ?>
 
-                        <!---EVENTUELLT EN LI KLASS HÄR SOM STÄNGS INNAN UL 
-                    -->
-                    
-
-
+                        
 
                                 </ul>
                             </div> <!-- Menu Trigger -->
@@ -174,5 +167,5 @@ wp_nav_menu( array(
             </div>
         </div>
     </header>
-    <!-- <div style="height: 700px"> </div> -->
+   
 </div>
