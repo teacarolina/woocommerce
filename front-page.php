@@ -20,6 +20,7 @@ $data1 = get_field('kampanj2', get_the_ID());
                         ?>
                     </div>
                     
+
                     </div>
                 </div>
             </div>
