@@ -114,7 +114,7 @@ function quadlayers_product_style(){
 
           echo '<style> .site-main{padding:20px!important;}
           .woocommerce-product-gallery__image{width:220px!important; height:220px!important;}
-          .woocommerce-product-gallery__wrapper{padding-left: 160px!important;}
+          .woocommerce-product-gallery__wrapper{padding-left: 60px!important;}
           .input-text{height:30px!important; color:black!important;}
           .single_add_to_cart_button{height:32px!important; background-color: green!important;}
           .onsale{background-color:red!important;}

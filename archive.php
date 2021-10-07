@@ -1,15 +1,22 @@
 <?php
 get_header();?>
 
-<h2>Våra butiker</h2>
 
+<div class="container">
+<h2>Våra butiker</h2>
+  <div class="row">
+      
 <?php query_posts($query_string . '&orderby=title&order=ASC');?>
 <?php if(have_posts()) : while(have_posts()) : the_post();?>
-    <?php
-    echo '<div class="entry-content">';?>
-    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><?php
-    echo '</div>';
-endwhile; endif;?>
 
+<div class="col">
+
+    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+    <p><?php the_content();?></p>
+</div>
+    <?php
+  
+endwhile; endif;?>
+</div></div>
 <?php
 get_footer();?>
